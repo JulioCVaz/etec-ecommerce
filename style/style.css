@@ -1,0 +1,50 @@
+.fa-shopping-cart{
+    padding-right: 10px;
+}
+
+.navbar-content{
+    width: 100%;
+}
+
+.navbar-nav li:last-child{
+    margin-left: 70%;
+}
+
+.box-image{
+    margin-top: 30px;
+}
+
+.title-products{
+    text-align: center;
+}
+.chromebook{
+    margin-top: 20px;
+    background-image: url('../img/chromebook.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    transition: .2s ease-in-out;
+}
+
+.imac{
+    background-image: url('../img/imac.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    transition: .2s ease-in-out;
+}
+
+.samsung{
+    margin-top: 20px;
+    background-image: url('../img/samsung.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    transition: .2s ease-in-out;
+}
+
+.chromebook:hover,
+.samsung:hover,
+.imac:hover{
+    opacity: 0.5;
+}
