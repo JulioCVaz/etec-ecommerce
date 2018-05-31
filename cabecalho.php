@@ -29,9 +29,6 @@
                         <a class="nav-link" href="#">Carrinho</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
                     </li>
                 </ul>

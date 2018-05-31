@@ -43,6 +43,35 @@
     transition: .2s ease-in-out;
 }
 
+.agenda{
+    margin-top: 20px;
+    background-image: url('../img/agenda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    transition: .2s ease-in-out;
+}
+
+.fone{
+    margin-top: 20px;
+    background-image: url('../img/fone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    transition: .2s ease-in-out;
+}
+
+.nutella{
+    margin-top: 20px;
+    background-image: url('../img/nutella.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    transition: .2s ease-in-out;
+}
+
+
 .chromebook:hover,
 .samsung:hover,
 .imac:hover{
