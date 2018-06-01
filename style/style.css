@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .fa-shopping-cart{
     padding-right: 10px;
 }
@@ -12,6 +15,10 @@
 
 .box-image{
     margin-top: 30px;
+}
+
+.content-others{
+    margin-bottom: 30px;
 }
 
 .title-products{
@@ -74,6 +81,15 @@
 
 .chromebook:hover,
 .samsung:hover,
-.imac:hover{
+.imac:hover,
+.agenda:hover,
+.fone:hover,
+.nutella:hover{
     opacity: 0.5;
+}
+
+
+.rodape{
+    text-align: center;
+    height: 30px;
 }
