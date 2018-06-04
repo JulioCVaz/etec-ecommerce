@@ -1,16 +1,9 @@
 <?php
 
-include('cabecalho.php');
+
+header('Content-Type: application/json');
 
 $produtos = $_POST; // verificar json decode
-var_dump($produtos);
-$preco = json_decode($_POST['preco']);
+var_dump(json_encode($produtos));
 
 ?>
-
-<div>Hello World</div>
-<p><?php echo $produtos?></p>
-<p><?php echo $preco?></p>
-
-<?php
-include('rodape.php');
