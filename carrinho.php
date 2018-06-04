@@ -2,7 +2,7 @@
 
 include('cabecalho.php');
 
-$produtos = json_decode($_POST['produto']);
+$produtos = $_POST; // verificar json decode
 var_dump($produtos);
 $preco = json_decode($_POST['preco']);
 
