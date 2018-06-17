@@ -1,3 +1,7 @@
+<?php
+include('login.php');
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +33,14 @@
                         <a class="nav-link" href="carrinho.php">Carrinho</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fas fa-sign-in-alt"></i>Login</a>
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <?php
+                            if($nome){
+                        ?>
+                            <i class="fas fa-sign-in-alt"></i> <?php echo' Olá ' . $nome?></a>
+                        <?php }else{ ?>
+                            <i class="fas fa-sign-in-alt"></i>Login</a>
+                        <?php }; ?>
                     </li>
                 </ul>
             </div>

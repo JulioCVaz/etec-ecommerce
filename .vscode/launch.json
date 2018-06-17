@@ -10,6 +10,7 @@
             "request": "launch",
             "port": 9000
         },
+        
         {
             "name": "Launch currently open script",
             "type": "php",
