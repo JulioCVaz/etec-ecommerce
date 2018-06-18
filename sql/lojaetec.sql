@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 31-Maio-2018 às 03:25
--- Versão do servidor: 5.7.17
--- PHP Version: 5.6.30
+-- Generation Time: 18-Jun-2018 às 03:51
+-- Versão do servidor: 10.1.32-MariaDB
+-- PHP Version: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -106,6 +106,14 @@ CREATE TABLE `usuario` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `usuario`, `senha`, `id_cliente`, `id_funcionario`, `id_fornecedor`) VALUES
+(1, 'admin', '123456', 1, 0, 0),
+(2, 'teste', '123', 0, 0, 1);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -154,31 +162,37 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `cliente`
   MODIFY `id_cliente` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `compra`
 --
 ALTER TABLE `compra`
   MODIFY `id_compra` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `fornecedor`
 --
 ALTER TABLE `fornecedor`
   MODIFY `id_fornecedor` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `seguimento_produto`
 --
 ALTER TABLE `seguimento_produto`
   MODIFY `id_segmento` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

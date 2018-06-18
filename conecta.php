@@ -1,5 +1,5 @@
 <?php 
 
-$conexao = mysqli_connect('localhost', 'root', '', 'lojatec');
+$conexao = mysqli_connect('localhost', 'root', '', 'lojaetec');
 
 ?>
