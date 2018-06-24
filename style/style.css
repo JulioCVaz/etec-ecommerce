@@ -17,6 +17,11 @@ body{
     margin-top: 30px;
 }
 
+.content-computer,
+.content-others{
+    text-align: center;
+}
+
 .content-others{
     margin-bottom: 30px;
 }
@@ -51,7 +56,7 @@ body{
 }
 
 .agenda{
-    margin-top: 20px;
+    margin-top: 40px;
     background-image: url('../img/agenda.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +75,7 @@ body{
 }
 
 .nutella{
-    margin-top: 20px;
+    margin-top: 40px;
     background-image: url('../img/nutella.jpg');
     background-repeat: no-repeat;
     background-size: cover;

@@ -11,7 +11,18 @@ var comprar = document.querySelectorAll('.buy');
 // essa não é a lógica ideal para atribuir eventos a elementos do nodelist, será melhorada em breve
 
 for (var i = 0; i < comprar.length; i++) {
-	comprar[i].addEventListener('click', function (event) {
+	comprar[i].addEventListener('click',  (event) => {
+
+		// logica para adicionar contador no carrinho;
+		var cont = document.querySelector('.cli');
+
+		if(cont.innerHTML != '' ){
+			var textA = cont.innerHTML 
+			var contar = parseInt(cont) +1;
+			var textA = contar;
+		}else{
+			cont.innerHTML = 1;
+		}
 		
 		var span = event.target.parentNode;
 

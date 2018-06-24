@@ -1,5 +1,6 @@
 <?php
 
+$teste = "teste";
 
 phpinfo();
 

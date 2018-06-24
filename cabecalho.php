@@ -30,7 +30,7 @@ include('login.php');
                         <a class="nav-link" href="index.php">Produtos <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrinho.php">Carrinho</a>
+                        <a class="nav-link" href="carrinho.php">Carrinho <span class="cli"></span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">

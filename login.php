@@ -1,5 +1,5 @@
 <?php 
-
+    $nome = null;
     if(isset($_POST['user'])){
         $nome = $_POST['user'];
     }
