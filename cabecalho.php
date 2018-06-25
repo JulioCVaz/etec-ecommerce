@@ -1,4 +1,5 @@
 <?php
+
 include('login.php');
 
 ?>
@@ -37,7 +38,7 @@ include('login.php');
                         <?php
                             if($nome){
                         ?>
-                            <i class="fas fa-sign-in-alt"></i> <?php echo' Olá ' . $nome?></a>
+                            <i class="fas fa-user-tag"></i> <?php echo' Olá ' . $nome?></a>
                         <?php }else{ ?>
                             <i class="fas fa-sign-in-alt"></i>Login</a>
                         <?php }; ?>

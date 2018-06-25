@@ -1,7 +1,23 @@
+<<<<<<< HEAD
 <?php 
     $nome = null;
+=======
+<?php
+
+include('conecta.php');
+include('database.php'); // database também está conectado a cadastro
+
+>>>>>>> b92c97d0f2e60442923362538bf9889f2094b4ae
     if(isset($_POST['user'])){
         $nome = $_POST['user'];
+        $senha = $_POST['password'];
+        $response = auth($conexao, $nome, $senha);
+        if($response){
+          $success = "Login Efetuado com sucesso";
+        }else{
+          $fail = "Usuário não localizado";
+        }
+
     }
 ?>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -25,8 +41,11 @@
             </div>
             <div class="form-group">
                 <p><a href="">Esqueceu sua senha ?</a></p>
-                <p><a href="">Cadastrar-se</a></p>
+                <p><a href="cadastro.php">Cadastrar-se</a></p>
                 <p><a href=""><?php echo $nome;?></a></p>
+            </div>
+            <div class="form-group">
+              <p><?php echo $response? $success : $fail;?></p>
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
