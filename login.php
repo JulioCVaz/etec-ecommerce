@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 <?php 
     $nome = null;
-=======
-<?php
-
-include('conecta.php');
-include('database.php'); // database também está conectado a cadastro
-
->>>>>>> b92c97d0f2e60442923362538bf9889f2094b4ae
     if(isset($_POST['user'])){
         $nome = $_POST['user'];
         $senha = $_POST['password'];
